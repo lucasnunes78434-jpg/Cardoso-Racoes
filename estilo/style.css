@@ -55,10 +55,10 @@ header > nav > a {
     font-family: var(--font-titulos);
     text-decoration: none;
     color: white;
-    font-size: 10px;
+    font-size: 15px;
     margin: 10px;
     background-color: black;
-    padding: 3px 10px;
+    padding: 10px 10px;
     border-radius: 10px;
     color: white;   
 }
