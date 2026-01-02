@@ -31,6 +31,11 @@ h1 {
     font-size: 25px;
     padding: 15px;
     color: black;
+    
+}
+
+main {
+    padding-top: 25px;
 }
 
 h2 {
@@ -142,6 +147,10 @@ footer p {
 
 .topo-produtos a:hover {
     background-color: #c9bfbf;
+}
+
+.topo-produtos h2 {
+
 }
 
 
