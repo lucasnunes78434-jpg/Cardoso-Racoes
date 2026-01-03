@@ -93,7 +93,7 @@ footer p {
     font-size: 12px;
 }
 
-/* CSS pagina ração para cães */
+/* CSS pagina  cães, gatos e medicamentos */
 
 .produtos {
     display: flex;
@@ -149,9 +149,69 @@ footer p {
     background-color: #c9bfbf;
 }
 
-.topo-produtos h2 {
-
+.topo-produtos > h2 {
+    font-family: var(--font-titulos);
+    ;
 }
+
+.produto .descricao {
+    width: 120px;                     /* mesma largura da imagem */
+    height: 120px;                    /* mesma altura da imagem */
+    display: flex;                    /* para centralizar o texto verticalmente */
+    align-items: center;              /* centraliza verticalmente */
+    justify-content: center;          /* centraliza horizontalmente */
+    text-align: center;               /* centraliza o texto */
+    background-color: #dc911a;        /* fundo amarelo claro do degradê */
+    border: 1.5px solid #f9a825;     /* borda amarelo mais escuro */
+    border-radius: 10px;              /* cantos arredondados */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* sombra suave */
+    margin-top: 2px;                  /* espaço entre imagem e caixa */
+    font-family: var(--font-normal);  /* mantém a fonte definida */
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;                      /* cor do texto */
+    padding: 8px;                      /* pequeno padding interno */
+    box-sizing: border-box;            /* inclui borda e padding na largura e altura */
+    overflow: hidden;                  /* evita que o texto quebre a caixa */
+}
+
+.produto .descricao p {
+    font-size: 10px;     /* menor para caber mais texto */
+    line-height: 1.2;    /* menos espaçamento entre linhas */
+    margin: 0;           /* remove margem extra do p */
+}
+
+.whatsapp-topo {
+    display: flex;
+    justify-content: flex-end; /* empurra o ícone para o canto direito */
+    margin-top: 5px;           /* distância do link acima */
+}
+
+.whatsapp-topo a img {
+    width: 50px;                /* tamanho do ícone */
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-right: 15px;
+}
+
+.whatsapp-topo a img:hover {
+    transform: scale(1.2);      /* leve zoom ao passar o mouse */
+}
+
+.whatsapp-topo a img:active,
+.whatsapp-topo a img:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* sombra mais forte */
+    transform: scale(1.4);                  /* aumento bem visível */
+}
+
+
+
+
+
+
+
+
 
 
 
