@@ -79,7 +79,6 @@ main {
 .apresentacao {
     grid-column: 2;
     text-align: center;
-    background-color: ;
     border-radius: 10px;
     padding-top: 15px;
     text-align: left;
@@ -104,6 +103,33 @@ main {
     width: 100%;
     height: auto;
 }
+
+section.produtos {
+    background-color:var(--cor-destaque);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    
+    
+}
+
+div.produto {
+    border: 1px solid #333333 ;
+    border-radius:  10px 10px;
+    
+    
+    
+    
+}
+
+div.produto img {
+    width: 120px;
+    height: 120px;
+}
+
+
 
 
 
