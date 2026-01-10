@@ -1,15 +1,10 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 :root {
-    --cor-destaque: #FFA500; /* Laranja */
-    --cor-fundo: #FFFFFF; /* Branco */
-    --cor-texto: #333333; /* Cinza escuro */
-    --cor-divisao: #CCCCCC; /* Cinza claro */
-    --fonte-titulo: "Bebas Neue", sans-serif;
-    --font-texto: 'Times New Roman', Times, serif;
-    --font-descricao: "Poppins", sans-serif;
+    --font-titulo: "PT Serif", serif;
 }
 
 * {
@@ -19,80 +14,162 @@
 }
 
 header {
-    background-color: var(--cor-destaque);
-    padding-left: 0px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    position: sticky;
-    top: 0;
-    box-shadow: 0px 2px 2px rgb(97, 88, 88);
+    background-color: rgb(209, 137, 4);
+    padding: 10px;
+    box-shadow: 0px 1px 2px black;
 }
-
-header.pai nav ul {
-    display: flex;              
-    justify-content: space-evenly; 
-    list-style: none;           
-    padding: 0;                 
-    margin: 0;                  
-    gap: 25px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    background-color: var(--cor-texto);
-    padding: 6px;
-    border-radius: 5px;
+ 
+header nav {
     display: flex;
+    justify-content: space-evenly;
 }
 
-header nav ul li a i {
-    font-size: 18px;
-    color: var(--cor-destaque);
+header li  {
+    list-style: none;    
 }
 
-header a:hover {
-    background-color: var(--cor-divisao);
+header nav li a i {
+    font-size: 25px;
+    color: rgb(245, 229, 229);
+    background-color: rgb(28, 27, 27);
+    padding-top: 3px;
+    border-radius: 3px;
+}
+
+header nav li a i:hover {
+    background-color: rgb(99, 93, 93);
     transition: 0.3s;
 }
 
 body {
-    background-color: #ffc436;
+    background-color:#ffc436;
 }
 
-main.index {
+.hero {
+    max-height: 50vh;
+    margin-bottom: 70px;
+}
+
+
+.hero-container {
     display: grid;
-    grid-template-columns: 1fr 90vw 1fr;
-    gap: 10px;
-    margin-top: 10px;
-    min-height: 100vh;
-}
-
-.apresentacao {
-    grid-column: 2;
-    border-radius: 10px;
-    padding-top: 15px;
-    text-align: justify;
-}
-
-
-div.texto h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: var(--fonte-titulo);
-    font-size: 1.8em;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 50px;
     
 }
 
-div.texto {
-    background-color: var(--cor-destaque);
-    border-radius: 10px;
-    padding: 5px 5px;
-}
-
-.apresentacao img {
-    width: 100%;
+.hero-image img {
+    width: 200px;
     height: auto;
 }
+
+.hero-text h1 {
+    font-family: var(--font-titulo);
+    font-size: 1.6em;
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+    
+}
+
+.hero-text h2 {
+    font-family:var(--font-titulo);
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    
+    
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    padding: 12px;
+
+    width: 80%;
+
+    background-color: #ffc436;
+    border-radius: 8px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+
+
+
+
+ .cards-section{
+    margin-top: 2px;
+    background-color: #ffc436;
+    height: 200px;
+    border-radius: px;
+    
+    
+}
+
+.cards-section h2 {
+    margin-bottom: 10px;
+    font-family: var(--font-titulo);
+    font-size: 0.8em;
+    margin-left: 15px;
+}
+
+footer {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    padding: 25px;       /* altura real do footer */
+    text-align: center;
+
+    position: fixed;     /* fixa na tela */
+    bottom: 0;           /* encosta na parte de baixo */
+    left: 0;
+    width: 100%;         /* ocupa toda a largura */
+}
+
+footer p {
+    font-size: 0.5em;
+}
+
+.zap {
+    position: fixed;   /* gruda na tela */
+    bottom: px;      /* distância do rodapé */
+    right: 20px;       /* distância da lateral direita */
+    z-index: 1000;     /* fica acima do footer e outros elementos */
+}
+
+.zap a {
+    display: inline-block;
+    background-color: #25D366;
+    border-radius: 50%;
+    
+    transition: all 0.3s ease;
+}
+
+.zap a:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
 
 main.pag2 {
     width: 100vw;
@@ -139,10 +216,4 @@ section div.produto img {
     font-size: 0.8em;
 }
 
-footer {
-    background-color: var(--cor-texto);
-    position: fixed;
-    bottom: 0;
-    padding: 8px;
-    width: 100vw;
-}
+
